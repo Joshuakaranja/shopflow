@@ -5,59 +5,38 @@ const Home = () => {
     <div className='min-h-screen bg-white'>
 
       {/* Announcement bar */}
-      <div className=''>
-        <div className=''>
-          Free delivery within Nairobi &nbsp;&nbsp;•&nbsp;&nbsp; 
-          50% off sales for Kids &nbsp;&nbsp;•&nbsp;&nbsp; 
-          50% off sales for Women &nbsp;&nbsp;•&nbsp;&nbsp;
-          Free delivery within Nairobi &nbsp;&nbsp;•&nbsp;&nbsp; 
-          50% off sales for Kids &nbsp;&nbsp;•&nbsp;&nbsp; 
-          50% off sales for Women &nbsp;&nbsp;•&nbsp;&nbsp;
+      <div className='bg-black text-white text-sm py-5 overflow-hidden whitespace-nowrap'>
+        <div className='animate-marquee inline-block'>
+          Free delivery within Nairobi &nbsp;•&nbsp; 50% off for Kids &nbsp;•&nbsp; 50% off for Women &nbsp;•&nbsp;
+          Free delivery within Nairobi &nbsp;•&nbsp; 50% off for Kids &nbsp;•&nbsp; 50% off for Women &nbsp;•&nbsp;
         </div>
       </div>
 
-      {/* Hero Section */}
-      <section className=''>
+      {/* Hero */}
+      <section className='flex items-center justify-between px-20 py-24 bg-black min-h-[80vh]'>
 
-        {/* Background images side by side */}
-        <div className=''>
-          <img
-            src='https://images.unsplash.com/photo-1617127365659-c47fa864d8bc?w=800'
-            alt='Gentleman in old money suit'
-            className=''
-          />
-          <img
-            src='https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=800'
-            alt='Lady in beach outfit'
-            className=''
-          />
-        </div>
-
-        {/* Dark overlay so text is readable */}
-        <div className='absolute inset-0 bg-black/30' />
-
-        {/* Bottom right content */}
-        <div className='relative z-10 flex flex-col items-end gap-4'>
-          <h1 className='text-white text-6xl font-light tracking-widest text-right'>
-            SHOPFLOW
+        {/* Left — text */}
+        <div className='flex flex-col gap-6 max-w-lg'>
+          <p className='text-sky-400 text-sm tracking-widest uppercase'>New season arrivals</p>
+          <h1 className='text-6xl font-bold text-white leading-tight'>
+            Dress the way you <span className='text-sky-400'>feel.</span>
           </h1>
-          <p className='text-white/70 text-sm tracking-widest text-right'>
-            DRESS THE WAY YOU FEEL
+          <p className='text-slate-300 text-lg'>
+            Fresh drops every week. Shop the latest fashion trends for men and women.
           </p>
-          <div className='flex items-center gap-4 mt-4'>
-            <Link
-              to='/collections'
-              className='text-white text-sm tracking-widest border-b border-white/50 hover:border-white transition duration-300'
-            >
-              DISCOVER MORE
+          <div className='flex items-center gap-4'>
+            <Link to='/products' className='bg-sky-400 text-white px-8 py-3 rounded-full font-semibold hover:bg-sky-500 transition duration-300'>
+              Shop Now
             </Link>
-            <Link
-              to='/products'
-              className='bg-white text-black text-sm tracking-widest px-8 py-3 hover:bg-slate-100 transition duration-300'
-            >
-              SHOP NOW
+            <Link to='/collections' className='text-white border border-white/40 px-8 py-3 rounded-full hover:border-white transition duration-300'>
+              Discover More
             </Link>
           </div>
+        </div>
+
+        {/* Right — image placeholder */}
+        <div className='w-96 h-96 bg-slate-700 rounded-2xl flex items-center justify-center'>
+          <p className='text-slate-400 text-sm'>Hero Image</p>
         </div>
 
       </section>
